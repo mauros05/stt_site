@@ -15,6 +15,7 @@ page '/*.txt', layout: false
 
 activate :livereload
 
+Dir["./components/**/*.rb"].each { |file| load file }
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
